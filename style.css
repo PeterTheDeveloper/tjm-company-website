@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/***********/
+/* General */
+/***********/
+
+* {
+  box-sizing: border-box;
+  
+}
+
+html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+      width: 100%;
+      margin:0px;
+      padding: 0px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 28px;
+      font-weight: lighter;
+      scroll-behavior: smooth;
+      background-color: red;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+
+/*****************/
+/*Header + Navbar*/
+/*****************/
+
+
+header {
+      width: 100%;
+      height: 100vh;
+      background: url(assets/images/header2.jpeg) no-repeat 50% 50%;
+      background-size: cover;
+       background-color: rgba(0,0,0,.5);
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 36px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      transition: 1s;
+}
+
+.jumbotron-content {
+      height: 100%;
+      width:100%;
+      padding: 100px 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: 900;
+      
+}
+
+.jumbotron-content h3 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 74px;
+      color: #fff;
+      margin: 0px;
+      line-height: 73px;
+}
+
+.jumbotron-content button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 20px 0px 0px 0px;
+  font-size: 1.2em;
+}
+
+.jumtbotron-content button:hover {
+  color: #c57ed3;
+  border-color: #c57ed3;
+
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-flex;
+      padding: 16px 30px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+.menu {
+     display: block;
+     justify-content: center;
+     width: 100%;
+}
+
+.menu ul {
+      padding: 0px 0px 0px 44%;
+}
+
+body > div > header > nav > div.menu > ul > li.mail-list > a {
+      margin-left: 200px;
+}
+/*****************/
+/*Header + Navbar*/
+/****Responsive***/
+/*****************/
+
+/*Navbar not mobile first */
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+      .jumbotron-content {
+            padding: 100px;
+      }
+}
+
+
+/*********/
+/*founder*/
+/*********/
+
+.founder {
+      background: url("assets/images/tiffany.JPG") no-repeat 50% 50%;
+      
+}
+
+/********/
+/*Footer*/
+/********/
+
+footer {
+      height: 200px;
+      background-color: gray;
+}
