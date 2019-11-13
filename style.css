@@ -364,7 +364,7 @@ footer {
 
 .bg-gradient3 span, .bg-gradient3:before {
   background: #EA80FC;
-  background: linear-gradient(to right, #EA80FC 0%, #fff 80%, #EA80FC 100%);
+  background: linear-gradient(to right, #EA80FC 0%, #EA80FC 80%, #EA80FC 100%);
 }
 
 /* General */
